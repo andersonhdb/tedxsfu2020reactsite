@@ -1,0 +1,32 @@
+.menu{
+    text-align: end;
+    background-color: #111123;
+}
+
+.menu ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 0;
+    padding: 1rem 0;
+}
+
+.menu ul li{
+    margin-right: 1rem;
+    font-size: 20pt;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu ul li a:hover{
+    color: #880000;
+    text-decoration: none;
+}
+
+.menu .selected a{
+    color: #AA0000;
+    text-decoration: none;
+}
