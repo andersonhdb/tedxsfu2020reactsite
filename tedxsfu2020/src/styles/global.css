@@ -1,0 +1,14 @@
+@font-face{
+    font-family: "Cheltenham Book";
+    src: url("/fonts/Cheltenham\ Book.ttf");
+}
+
+@font-face{
+    font-family: "Cheltenham Book italic";
+    src: url("/fonts/Cheltenham\ BookItalic.ttf");
+}
+
+html{
+    /* background-image: url('/images/site/background-img.jpg'); */
+    background-color: hotpink;
+}

@@ -1,12 +1,20 @@
-.menu{
-    text-align: end;
-    background-color: #111123;
+
+.navigation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90vh;
+    padding-left: 2rem;
+}
+
+.navigation img{
+    width: 255px;
 }
 
 .menu ul{
     list-style-type: none;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     margin-top: 0;
     padding: 1rem 0;
 }
@@ -17,16 +25,29 @@
 }
 
 .menu ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
+    font-family: Helvetica, sans-serif;
 }
 
 .menu ul li a:hover{
     color: #880000;
-    text-decoration: none;
+    /* text-decoration: line-through; */
 }
 
 .menu .selected a{
     color: #AA0000;
     text-decoration: none;
+}
+
+.social_media ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+    padding: 1rem 0;
+}
+
+.social_media img{
+    width: 16px;
 }
