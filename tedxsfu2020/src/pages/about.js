@@ -1,9 +1,12 @@
 import React from "react"
-import Menu from "../components/menu"
+//import Menu from "../components/menu"
+import Layout from "../components/layout"
 
 export default function About() {
-  return (<div>
-      <Menu selected="About"/>
-      <h1>The About Page</h1>
-      </div>)
+  return (
+      <Layout>
+        <div>
+          <h1>The About Page</h1>
+        </div>
+      </Layout>)
 }

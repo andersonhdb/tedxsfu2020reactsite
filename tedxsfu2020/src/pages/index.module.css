@@ -1,20 +1,4 @@
-@font-face{
-    font-family: "Cheltenham Book";
-    src: url("../../static/fonts/Cheltenham\ Book.ttf");
-}
-
-@font-face{
-    font-family: "Cheltenham Book italic";
-    src: url("../../static/fonts/Cheltenham\ BookItalic.ttf");
-}
-
-.main{
-    display:flex;
-    width: 95vw;
-    justify-content: space-between;
-}
-
-.main .content h1{
+.content h1{
     margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-family: "Cheltenham Book italic";
@@ -23,7 +7,7 @@
     text-transform: uppercase;
 }
 
-.main .content h2{
+.content h2{
     margin-top: 0.5rem;
     margin-bottom: 0;
     font-size: 60pt;
@@ -31,21 +15,21 @@
     font-weight: 500;
 }
 
-.main .content .ted_title{
+.content .ted_title{
     font-weight: 700;
     margin: 0;
     margin-left: 3rem;
 }
 
-.main .content .ted_title span{
+.content .ted_title span{
     margin-left: 5rem;
 }
 
-.main .content .conference_date{
+.content .conference_date{
     margin-left: 8rem;
 }
 
-.main .conference_details{
+.conference_details{
     position: relative;
     top: 25rem;
     text-align: center;
@@ -53,13 +37,13 @@
     height: max-content;
 }
 
-.main .conference_details ul{
+.conference_details ul{
     list-style-type: none;
     padding: 0;
 }
 
 
-.main .button{
+.button{
     margin-top: 0.2rem;
     background-color: #AA0000;
     color: white;

@@ -14,9 +14,10 @@ export default function Header(props){
             <Link to="/"><img src={logo} alt="TEDxSFU logo"/></Link>
             <nav className={menuStyles.menu}>
                 <ul>
+                    <li><Link to="/legacy/">Legacy</Link></li>
                     <li><Link to="/about/">About</Link></li>
-                    <li><Link to="/team/">the Team</Link></li>
-                    <li><Link to="/sponsors/">Sponsors</Link></li>
+                    <li><Link to="/team/">OC Team</Link></li>
+                    <li><Link to="/sponsors/">Partners</Link></li>
                     <li><Link to="/speakers/">Speakers</Link></li>
                 </ul>
             </nav>

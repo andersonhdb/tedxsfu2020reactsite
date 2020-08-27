@@ -1,11 +1,11 @@
 import React from "react"
-import Menu from "../components/menu"
+// import Menu from "../components/menu"
+import Layout from "../components/layout"
 import homeStyle from "./index.module.css"
 
 export default function Home() {
   return (
-  <div className={homeStyle.main}>
-    <Menu selected="Home"/>
+  <Layout>
     <div className={homeStyle.content}>
       <h2 className={homeStyle.ted_title}>TEDx<br/><span>SFU2020</span></h2>
       <h1>un<br/>ravel</h1>
@@ -20,5 +20,5 @@ export default function Home() {
       </ul>
       <a class={homeStyle.button} href="https://www.instagram.com/tedxsfu/">Sign up!</a>
     </div>
-  </div>)
+  </Layout>)
 }

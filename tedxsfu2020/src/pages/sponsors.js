@@ -1,10 +1,12 @@
 import React from "react"
-import Menu from "../components/menu"
+//import Menu from "../components/menu"
+import Layout from "../components/layout"
 
 export default function sponsors() {
   return (
-  <div>
-    <Menu selected="sponsors"/>
-    <h1>Sponsors page</h1>
-  </div>)
+  <Layout>
+    <div>
+      <h1>Partners page</h1>
+    </div>
+  </Layout>)
 }

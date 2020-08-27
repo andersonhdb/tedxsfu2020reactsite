@@ -5,6 +5,13 @@
     justify-content: space-between;
     height: 90vh;
     padding-left: 2rem;
+    margin-right: 2rem;
+    position: fixed;
+    top: 0;
+}
+
+.navigation + div{
+    margin-left: 20rem;
 }
 
 .navigation img{
