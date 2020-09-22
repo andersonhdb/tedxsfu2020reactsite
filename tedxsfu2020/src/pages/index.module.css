@@ -11,44 +11,79 @@
     margin-top: 0.5rem;
     margin-bottom: 0;
     font-size: 60pt;
-    font-family: Helvetica, snas-serif;
+    font-family: Helvetica, Arial, snas-serif;
     font-weight: 500;
 }
 
 .content .ted_title{
-    font-weight: 700;
     margin: 0;
     margin-left: 3rem;
-}
-
-.content .ted_title span{
-    margin-left: 5rem;
 }
 
 .content .conference_date{
     margin-left: 8rem;
 }
 
+.content img{
+    position: relative;
+    top: -2rem;
+    width: 90%;
+}
+
 .conference_details{
     position: relative;
-    top: 25rem;
+    top: 40vh;
     text-align: center;
-    margin-left: 2rem;
     height: max-content;
+    margin-right: 4rem;
+}
+
+.conference_details img{
+    width: 300px;
 }
 
 .conference_details ul{
     list-style-type: none;
     padding: 0;
+    margin-top: 0;
+}
+
+.conference_details p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 
 
 .button{
     margin-top: 0.2rem;
-    background-color: #AA0000;
+    background-color: #E62b1e;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
-    padding: 6px 8px;
+    padding: 15px 60px;
     text-decoration: none;
+}
+
+@media screen and (max-width: 800px){
+
+    .content img{
+        position: static;
+        width: 80%;
+        margin-left: 10%;
+        margin-top: 5rem;
+    }
+
+    .conference_details{
+        position: static;
+        margin: 0;
+    }
+
+    .conference_details img{
+        display: none;
+    }
+
+    .button{
+        padding: 15px 15%;
+    }
 }
 

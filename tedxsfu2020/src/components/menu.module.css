@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 90vh;
+    height: 95vh;
     padding-left: 2rem;
     margin-right: 2rem;
     position: fixed;
@@ -11,11 +11,12 @@
 }
 
 .navigation + div{
+    width: 100%;
     margin-left: 20rem;
 }
 
 .navigation img{
-    width: 255px;
+    width: 165px;
 }
 
 .menu ul{
@@ -28,18 +29,22 @@
 
 .menu ul li{
     margin-right: 1rem;
-    font-size: 20pt;
+    font-size: 16pt;
+    margin-bottom: 0.5rem;
 }
 
 .menu ul li a{
     color: black;
     text-decoration: none;
+    text-transform: uppercase;
     font-family: Helvetica, sans-serif;
 }
 
 .menu ul li a:hover{
-    color: #880000;
-    /* text-decoration: line-through; */
+    /*color: #880000;*/
+    text-decoration: line-through;
+    text-decoration-color:  #E62b1e;
+    text-decoration-thickness: 0.5rem;
 }
 
 .menu .selected a{
@@ -47,14 +52,69 @@
     text-decoration: none;
 }
 
+.social_media{
+    margin-top: 8rem;
+}
+
 .social_media ul{
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 10rem;
     padding: 1rem 0;
 }
 
+.social_media li{
+    margin-top: 10px;
+}
+
 .social_media img{
-    width: 16px;
+    width: 20px;
+    margin-bottom: 10px;
+}
+
+.mobile{
+    background-color: white;
+    display: none;
+}
+
+.hamburger img{
+    margin-top: 20px;
+    width: 32px;
+    margin-right: 2rem;
+}
+
+.dropdown{
+    display: none;
+}
+
+@media screen and (max-width: 800px){
+    .mobile{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobile p{
+        margin: 0;
+    }
+    .desktop{
+        display: none;
+    }
+
+    .navigation{
+        width: 100%;
+        height: max-content;
+        padding-left: 0;
+        z-index: 999;
+    }
+
+    .navigation + div{
+        margin-left: 0;
+    }
+
+    .dropdown{
+        display: block;
+        text-align: center;
+        background-color: white;
+    }
 }

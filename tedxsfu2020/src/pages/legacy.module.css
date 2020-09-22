@@ -1,0 +1,149 @@
+.legacy div{
+    color: black;
+}
+
+.legacy{
+    margin-right: 3rem;
+}
+
+.legacy .content{
+    margin: auto;
+    padding-top: 3rem;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+.legacy .slide{
+    height: 100vh;
+    width: auto;
+    margin-right: 2rem;
+  }
+
+.legacy .content h2{
+    font-family: "Cheltenham Book italic";
+    font-size: 60pt;
+    margin-top: 0;
+    margin-right: 2rem;
+}
+
+.legacy .content p{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 3rem;;
+}
+
+.legacy .content iframe{
+    grid-column: 1/span 2;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 56.25%;
+}
+
+.legacy .content .videoLabel{
+    grid-column: 1/span 2;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: 16pt;
+}
+
+.legacy > div > div:nth-last-of-type(1)
+{
+    right: 5.8rem!important;
+}
+
+.legacy > div > div:nth-last-of-type(3){
+    display: none;
+}
+
+.legacy > div > div:nth-last-of-type(2){
+    display: none;
+}
+
+.yearcolumn{
+    height:100vh;
+    position: relative;
+    right: 0;
+    border-left: 2px solid black;
+    display: flex;
+    align-items: center;
+}
+
+.yearcolumn ul{
+    padding: 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+.yearcolumn ul li{
+    list-style-type: none;
+    margin-bottom: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 800px){
+    .legacy{
+        margin-top: 2rem;
+    }
+
+    .legacy .slide{
+        height: auto;
+        width: 100vw;
+        margin-right: 0;
+      }
+    
+    .legacy .content{
+        grid-template-columns: 1fr;
+        width: 100vw;
+    }
+
+    .legacy .content iframe, 
+    .legacy .content .videoLabel
+    {
+        grid-column: 1/ 2;
+    }
+
+    .legacy .content h2{
+        margin-left: 3rem;
+    }
+
+    .legacy .content p{
+        text-align: center;
+        margin-left: 3rem;
+    }
+
+    .legacy .content iframe{
+        margin: auto;
+        margin-bottom: 56.25%;
+    }
+
+    .yearcolumn{
+        display: none;
+        position: absolute;
+        width: 100vw;
+        height: auto;
+        top: 11rem;
+        overflow: hidden;
+    }
+
+    .yearcolumn ul{
+        display: flex;
+        transform: translateX(40vw); 
+    }
+
+    .yearcolumn ul li{
+        margin-right: 2rem;
+    }
+
+    .legacy > div > div:nth-last-of-type(3){
+        display: block;
+    }
+    
+    .legacy > div > div:nth-last-of-type(2){
+        display: block;
+    }
+
+    .legacy > div > div:nth-last-of-type(1)
+    {
+        top: 12rem !important;
+    }
+
+}

@@ -1,0 +1,47 @@
+.main{
+    display: grid;
+    grid-template-columns: 1fr 40%;
+}
+
+.content{
+    margin: auto;
+}
+
+.content h2{
+    font-family: "Cheltenham Book italic";
+    font-size: 30pt;
+    font-style: italic;
+    text-align: center;
+}
+
+.content p{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20rem;
+}
+
+.main img{
+    height: 100vh;
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .content{
+        grid-row: 2/3;
+    }
+
+    .main img{
+        width: 100vw;
+        height: auto;
+    }
+
+    .content h2{
+        font-family: "Cheltenham Book italic";
+        font-size: 30pt;
+        font-style: italic;
+        text-align: left;
+    }
+}

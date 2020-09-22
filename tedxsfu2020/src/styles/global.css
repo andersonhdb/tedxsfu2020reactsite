@@ -9,5 +9,10 @@
 }
 
 html{
-    background-image: url('../../static/images/site/background_img.jpg');
+    background-image: url('../../static/images/site/backgroundOpcacity05.png');
+    background-color: rgba(255,255,255,0.2);
+}
+
+body{
+    margin: 0;
 }

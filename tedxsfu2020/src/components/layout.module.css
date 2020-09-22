@@ -1,5 +1,11 @@
 .main{
     display:flex;
-    width: 95vw;
     /* justify-content: space-between; */
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        display: block;
+        width: 100%;
+    }
 }

@@ -1,11 +1,22 @@
+.header{
+    margin-top: 5rem;
+}
+
 .header h1{
     font-family: Helvetica, sans-serif;
     font-weight: normal;
+    font-size: 50pt;
 }
 
 .header h1 span{
     font-weight: bold;
     font-family: "Cheltenham Book italic";
+    text-decoration: underline;
+    text-decoration-color:  #E62b1e;
+}
+
+.header img{
+    width: 80%;
 }
 
 .project_leads, 
@@ -44,7 +55,6 @@
 
 .project_leads div,
 .internal div,
-.events div,
 .content div,
 .marketing div,
 .creative div,
@@ -53,8 +63,13 @@
     margin-bottom: 2rem;
 }
 
+.events div{
+    margin-top:2rem;
+    margin-right: 2rem;
+}
+
 .team_image{
-    background-color: darkgray;
+    background-color: transparent;
 }
 
 .project_leads .team_image{
@@ -63,25 +78,16 @@
     grid-column: 2/ span 2;
 }
 
-.internal .team_image, 
-.events .team_image{
-    grid-row: 1/3;
-    grid-column: 2/3;
+.events .blurb{
+    grid-column: 2/span 2;
 }
 
-.marketing .team_image{
-    grid-row: 1/3;
-    grid-column: 3/4;
+.internal .blurb{
+    grid-column: 2/span 2;
 }
 
-.content .blurb,
-.marketing .blurb,
-.creative .team_image{
+.marketing .blurb{
     grid-column: 1/ span 2;
-}
-
-.creative .blurb{
-    grid-row: 2/3;
 }
 
 .partners .team_image{
@@ -94,5 +100,117 @@
 
 .info{
     grid-column: 1/4;
+}
+
+@media screen and (max-width: 800px){
+    .header{
+        margin-top: 6rem;
+    }
+
+    .header img{
+        width: 100%;
+    }
+    
+    .description{
+        display: none;
+    }
+
+    .filler{
+        display: none;
+    }
+
+    .project_leads, 
+    .internal, 
+    .events, 
+    .content,
+    .marketing,
+    .creative,
+    .partners,
+    .ga{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 8rem;
+    }
+
+    .project_leads > div > div,
+    .internal > div > div, 
+    .events > div > div, 
+    .content > div > div,
+    .marketing > div > div,
+    .creative > div > div,
+    .partners > div > div,
+    .ga > div > div{
+        position: relative;
+    }
+
+    .project_leads div div h3,
+    .internal div div h3, 
+    .events div div h3, 
+    .content div div h3,
+    .marketing div div h3,
+    .creative div div h3,
+    .partners div div h3,
+    .ga div div h3{
+        position: absolute;
+        top: 24vw;
+        margin-left: 1rem;
+        color:#E62b1e;
+    }
+
+    .project_leads div div p,
+    .internal div div p, 
+    .events div div p, 
+    .content div div p,
+    .marketing div div p,
+    .creative div div p,
+    .partners div div p{
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .project_leads > div > div > p,
+    .internal > div > div > p, 
+    .events > div > div > p, 
+    .content > div > div > p,
+    .marketing > div > div > p,
+    .creative > div > div > p,
+    .partners > div > div > p,
+    .ga > div > div > p{
+        display: none;
+    }
+
+    .project_leads div,
+    .internal div,
+    .content div,
+    .marketing div,
+    .creative div,
+    .partners div{
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+
+    .tony{
+        position: relative;
+        top: 5rem;
+    }
+
+    .events div{
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .project_leads .blurb,
+    .internal .blurb,
+    .events .blurb,
+    .content .blurb,
+    .creative .blurb,
+    .partners .blurb{
+        margin-left: 1rem;
+        grid-column: 1/span 2;
+    }
+
+    .events .blurb{
+        grid-row: 1/2;
+    }
 }
 

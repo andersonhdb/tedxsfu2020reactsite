@@ -1,0 +1,30 @@
+
+.main h2{
+    font-family:"Cheltenham Book italic";
+    font-size: 50pt;
+}
+
+.speakersLayout{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+}
+
+.speaker{
+    margin-right: 2rem;
+    width: 160px;
+}
+
+@media screen and (max-width: 800px){
+    .main{
+        margin-top: 6rem;
+    }
+
+    .main h2{
+        font-size: 40pt;
+        text-align: center;
+    }
+
+    .speaker{
+        margin: auto;
+    }
+}

@@ -1,54 +1,29 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React, {useState} from "react"
 import Layout from "../components/layout"
-import Slider from "../components/slider"
-// import SpeakerData from "./speaker-data"
-import Img from "gatsby-image"
+import Member from "../components/team-member"
+import SpeakerStyle from "./speakers2.module.css"
 
-import SpeakersStyle from "./speakers.module.css"
+import SpeakerData from "../data/speaker-data"
 
-// import speaker1 from "../images/team/t1_e.jpg"
-// import speaker2 from "../images/team/m1_e.jpg"
 
-export default function Speakers(props) {
 
-  console.log(props)
-  const slides = [<Img fixed={props.data.speaker1ql.childImageSharp.fixed} alt="speaker 1"/>,
-  <Img fixed={props.data.speaker2ql.childImageSharp.fixed} alt="speaker 2"/>]
-  return (
-      <Layout>
-      <div>
-        <div>
-          <div class={SpeakersStyle.Carousel}>
-              <Img fixed={props.data.speaker1ql.childImageSharp.fixed} alt="speaker 1"/>
-              <Img fixed={props.data.speaker2ql.childImageSharp.fixed} alt="speaker 2"/>
-          </div>
-          <div class="content">
-          </div> 
+export default function Speakers2(props){
+    const [state, setState] = useState({
+        lastClicked: null,
+      })
+    
+    const {lastClicked} = state;
+    
+    return(<Layout title="Speakers">
+        <div class={SpeakerStyle.main}>
+            <h2>MEET THE SPEAKERS</h2>
+            <div class={SpeakerStyle.speakersLayout}>
+            {SpeakerData.map((speaker,i) =>(
+                <div class={SpeakerStyle.speaker}>
+                    <Member key={speaker+i} name={speaker.name} job={speaker.job} image={speaker.image} activeimage={speaker.image} description={speaker.description}/>
+                </div>
+                ))}
+            </div>
         </div>
-      </div>
-      <h1>The speakers page</h1>
-      </Layout>)
+    </Layout>)
 }
-
-export const query = graphql `
-  query{
-    speaker1ql: file(relativePath: {eq: "team/leads/t1_e.jpg"}) {
-      childImageSharp{
-        fixed(width: 200){
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-    speaker2ql: file(relativePath: {eq: "team/leads/m1_e.jpg"}) {
-      childImageSharp{
-        fixed(width: 200){
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`
-
-console.log("Anderson: ");
-console.log(query);
