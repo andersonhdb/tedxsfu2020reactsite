@@ -27,12 +27,13 @@ const Slider = props=>{
             activeIndex: 0,
             translate: 0,
             transition: 0.45,
-            _slides: []
+            _slides: [],
+            k: false
         }
     )
 
     //const {translate, transition} = state;
-    const {translate, transition, activeIndex} = state;
+    const {translate, transition, activeIndex, k} = state;
 
     const nextSlide = ()=>{
         if(activeIndex === props.slides.length-1){
@@ -98,6 +99,48 @@ const Slider = props=>{
         })
     }
 
+    function throttle(cb, y) {
+        console.log("throtle y: "+ y)
+        //let makingCall
+        return function() {
+          console.log("the making call status: " + k)
+          // if I'm in progress of making an API call,
+          // don't trigger another one
+          if (k){
+            y=0;
+            return
+          } 
+          // set up API call to fire
+          setState({
+              ...state,
+              k: true
+          })
+          // give the user some time to type by delaying the actual call
+          setTimeout(() => {
+            console.log("reached")
+            setState({
+                ...state,
+                k: false
+            })
+            cb(y)
+          }, 1000/60)
+        }
+    }
+
+    const scroll = (y)=>{
+        console.log("ANDERSON: scroll - " + y)
+        if(y!== undefined){
+            if(y>0 && getWidth() > mobileWidth){
+                nextSlide()
+            }
+            else if(y<0 && getWidth() > mobileWidth){
+                prevSlide()
+            }
+        }
+    }
+
+    //const throttleScroll = throttle(scroll)
+
     const toSpecificSlide = (e) =>{
         setState({
             ...state,
@@ -122,6 +165,16 @@ const Slider = props=>{
     const mobileStye = {
         overflow: 'hidden',
         width: "100vw"
+    }
+
+    if(typeof window === 'undefined'){
+    }
+    else{
+        window.addEventListener('wheel', (event)=>{
+            console.log("delta y: " + event.deltaY)
+            //throttle(scroll, event.deltaY)()
+            //scroll(event.deltaY)
+        }, { capture: false, passive: true})
     }
 
     return (<div style = {mobileDecider(mobileWidth, style, mobileStye)}>

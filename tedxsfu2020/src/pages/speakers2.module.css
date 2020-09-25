@@ -2,16 +2,18 @@
 .main h2{
     font-family:"Cheltenham Book italic";
     font-size: 50pt;
+    margin-top: 1rem;
 }
 
 .speakersLayout{
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
 .speaker{
-    margin-right: 2rem;
-    width: 160px;
+    margin-right: 5px;
+    width: 340px;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 800px){
@@ -26,5 +28,6 @@
 
     .speaker{
         margin: auto;
+        margin-bottom: 2rem;
     }
 }

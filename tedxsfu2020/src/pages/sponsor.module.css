@@ -7,20 +7,55 @@
 .content{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 2rem;
+    margin: 0 2rem 2rem 2rem;
 }
 
-.content div{
+.content > div{
     margin-right: 2rem;
+    margin-bottom: 3rem;
+}
+
+.content > div:first-of-type{
+    grid-column: 1/span 2;
+    margin-bottom: 5rem;
+}
+
+.content > div:nth-of-type(2){
+    grid-column: 1/span 2;
+    width: 80%;
+    margin-bottom: 5rem;
+}
+
+.content a{
+    text-decoration: none;
+    color:  #E62b1e;
 }
 
 .content div h2{
+    font-family: "Cheltenham Book italic";
+    text-transform: uppercase;
+}
+
+.content div h2 span{
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
 
+
+
+.content div img{
+    width: 50%;
+    margin: 0 20%;
+}
+
 .content div p{
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.content div a{
+    width: 100%;
+    text-align: center;
+    margin: auto;
 }
 
 @media screen and (max-width: 800px){

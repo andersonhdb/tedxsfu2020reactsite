@@ -9,7 +9,7 @@ export default function Layout(props){
         <div>
             <Head title={props.title}/>
             <div class={layoutStyle.main}>
-                <Menu/>
+                <Menu index={props.index}/>
                 {props.children}
             </div>
         </div>

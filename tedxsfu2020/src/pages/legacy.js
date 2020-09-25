@@ -19,11 +19,13 @@ export default function Legacy() {
 
   const arr = Array("2019", "2018", "2017", "2016", "2015", "2014", "2013", "2012", "2011");
   return (
-      <Layout title="Legacy">
+      <Layout title="Legacy" index={3}>
         <div class={LegacyStyle.legacy}>
           <Slider slides={LegacyData}>
             {LegacyData.map((legacy, i)=>(
-              <div key={legacy+i} class={LegacyStyle.slide}>
+              <div key={legacy+i} class={LegacyStyle.slide} style={{
+                backgroundImage: "url("+legacy.background+")"
+              }}>
                 <div class={LegacyStyle.content}>
                   <h2>{legacy.year}</h2>
                   <p>{legacy.blurb}</p>

@@ -5,7 +5,7 @@ import homeStyle from "./index.module.css"
 
 export default function Home() {
   return (
-  <Layout title="Home">
+  <Layout title="Home" index={0}>
     <div className={homeStyle.content}>
       {/* <h2 className={homeStyle.ted_title}>TEDx<br/><span>SFU2020</span></h2>
       <h1>un<br/>ravel</h1>
@@ -19,7 +19,7 @@ export default function Home() {
         <li><p>time</p></li>
         <li><p>McMedia</p></li>
       </ul>
-      <a class={homeStyle.button} href="https://www.instagram.com/tedxsfu/">CTA</a>
+      <a class={homeStyle.button} href="https://hopin.to/events/tedxsfu-2020-unravel">CTA</a>
     </div>
   </Layout>)
 }

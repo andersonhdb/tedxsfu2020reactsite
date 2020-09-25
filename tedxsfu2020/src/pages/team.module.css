@@ -38,7 +38,8 @@
 .content h2,
 .marketing h2,
 .creative h2,
-.partners h2{
+.partners h2,
+.ga h2{
     font-family: Arial, Helvetica, sans-serif;
     text-transform: uppercase;
 }
@@ -49,7 +50,8 @@
 .content p,
 .marketing p,
 .creative p,
-.partners p{
+.partners p,
+.ga p{
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -58,7 +60,8 @@
 .content div,
 .marketing div,
 .creative div,
-.partners div{
+.partners div,
+.ga div{
     margin-right: 2rem;
     margin-bottom: 2rem;
 }
@@ -75,7 +78,10 @@
 .project_leads .team_image{
     
     height: 200px;
-    grid-column: 2/ span 2;
+}
+
+.project_leads .blurb{
+    grid-column: 1/span 2;
 }
 
 .events .blurb{
@@ -96,6 +102,10 @@
 
 .partners .blurb{
     grid-column: 2/4;
+}
+
+.creative .blurb{
+    grid-column: 1/ span 2;
 }
 
 .info{
@@ -151,10 +161,13 @@
     .creative div div h3,
     .partners div div h3,
     .ga div div h3{
-        position: absolute;
-        top: 24vw;
+        /* position: absolute;
+        top: 24vw; */
+        margin-top: 5px;
         margin-left: 1rem;
-        color:#E62b1e;
+        font-weight: normal;
+        /* color:#E62b1e; */
+        color:black;
     }
 
     .project_leads div div p,

@@ -6,7 +6,7 @@ import SponsorStyle from "./sponsor.module.css"
 
 export default function sponsors() {
   return (
-  <Layout title="Partners">
+  <Layout title="Partners" index={1}>
     <div class={SponsorStyle.partners}>
       <h1>MEET OUR PARTNERS</h1>
       <div class={SponsorStyle.content}>

@@ -8,7 +8,7 @@
 
 .legacy .content{
     margin: auto;
-    padding-top: 3rem;
+    padding-top: 1rem;
     display: grid;
     grid-template-columns: max-content 1fr;
 }
@@ -24,17 +24,17 @@
     font-size: 60pt;
     margin-top: 0;
     margin-right: 2rem;
+    margin-bottom: 0;
 }
 
 .legacy .content p{
     font-family: Arial, Helvetica, sans-serif;
-    margin-right: 3rem;;
 }
 
 .legacy .content iframe{
     grid-column: 1/span 2;
-    width: 60%;
-    height: 60%;
+    width: 95%;
+    height: 70%;
     margin-bottom: 56.25%;
 }
 
@@ -51,11 +51,13 @@
 }
 
 .legacy > div > div:nth-last-of-type(3){
-    display: none;
+    right: 2rem!important;
+    top: 80vh !important;
 }
 
 .legacy > div > div:nth-last-of-type(2){
-    display: none;
+    right: 2rem!important;
+    top: 5rem!important;
 }
 
 .yearcolumn{
@@ -103,11 +105,13 @@
 
     .legacy .content h2{
         margin-left: 3rem;
+        margin-bottom: 5rem;
     }
 
     .legacy .content p{
         text-align: center;
         margin-left: 3rem;
+        margin-right: 3rem;
     }
 
     .legacy .content iframe{
@@ -135,15 +139,21 @@
 
     .legacy > div > div:nth-last-of-type(3){
         display: block;
+        top: 11rem!important;
+        right: 1rem!important;
     }
     
     .legacy > div > div:nth-last-of-type(2){
         display: block;
+        top: 11rem!important;
+        right:85vw!important;
     }
 
     .legacy > div > div:nth-last-of-type(1)
     {
         top: 12rem !important;
+        right: 0!important;
+        justify-content: center!important;
     }
 
 }

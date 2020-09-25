@@ -54,7 +54,7 @@ export default [
         image: "/images/speakers/Trystan_bw.png",
         name: "Trystan Jones",
         job: "Health Care Worker",
-        description:<p>My passions have always come from storytelling. As a teenager, I co-founded a production company to provide opportunities in the arts for youth in my rural northern community. Having travelled the world in search of creating new stories for myself, I have worked vigorously to hone my craft as an artist and storyteller. More recently I have involved myself in climate/racial activism. In the wake of COVID19 and the rise of Anti-Asian racism paired with the George Floyd protests, I spent much of my energy getting the conversation started on racial justice in my rural community of Fort St John, BC. Real change only comes if there are those who are willing to have conversations on the uncomfortable topics.</p>,
+        description:<p>Trystan's passions have always come from storytelling. As a teenager, he co-founded a production company to provide opportunities in the arts for youth in my rural northern community. Having travelled the world in search of creating new stories for myself, he have worked vigorously to hone my craft as an artist and storyteller. More recently he has involved himself in climate/racial activism. In the wake of COVID-19 and the rise of Anti-Asian racism paired with the George Floyd protests, he has spent much of his energy getting the conversation started on racial justice in his rural community of Fort St. John, BC. Real change only comes if there are those who are willing to have conversations on the uncomfortable topics.</p>,
         continuation:"Lipsum excelcior Abyssum sublimatus delirium, praecipitatum."
     },
     {

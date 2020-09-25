@@ -16,11 +16,11 @@ export default function Header(props){
     const {toggled} = state
     const menu = <nav className={menuStyles.menu}>
                     <ul>
-                        <li><Link to="/sponsors/">Partners</Link></li>
-                        <li><Link to="/team/">OC Team</Link></li>
-                        <li><Link to="/legacy/">Legacy</Link></li>
-                        <li><Link to="/speakers/">Speakers</Link></li>
-                        <li><Link to="/about/">About</Link></li>
+                        {props.index==1? <li className={menuStyles.selected}><Link to="/sponsors/">Partners</Link></li> : <li><Link to="/sponsors/">Partners</Link></li>}
+                        {props.index==2? <li className={menuStyles.selected}><Link to="/team/">OC Team</Link></li> : <li><Link to="/team/">OC Team</Link></li>}
+                        {props.index==3? <li className={menuStyles.selected}><Link to="/legacy/">Legacy</Link></li>: <li><Link to="/legacy/">Legacy</Link></li>}
+                        {props.index==4? <li className={menuStyles.selected}><Link to="/speakers/">Speakers</Link></li> : <li><Link to="/speakers/">Speakers</Link></li>}
+                        {props.index==5? <li className={menuStyles.selected}><Link to="/about/">About</Link></li> : <li><Link to="/about/">About</Link></li>}
                     </ul>
                 </nav>
     const content = <div class={menuStyles.dropdown}> 
